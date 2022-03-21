@@ -22,8 +22,8 @@ def change_dns():
     a2 = getIP + ' msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com #Edge商店扩展'
     with open(hosts, 'r', encoding='utf-8') as readhost:
         lines = readhost.read()
-        s = re.sub('(.*?) edge.microsoft.com #Edge翻译', a1, lines)
-        b = re.sub('(.*?) msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com #Edge商店扩展', a2, s)
+        s = re.sub('(.*?) edge.microsoft.com(.*)', a1, lines)
+        b = re.sub('(.*?) msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com(.*)', a2, s)
         readhost.close()
     print('\n您的hosts文件内容：' + b)
     with open(hosts, 'w', encoding='utf-8') as f2:
