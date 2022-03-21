@@ -56,11 +56,10 @@ if __name__ == '__main__':
           '\t3.若曾在hosts文件内填写过edge.microsoft.com相关代码（姑且称之为代码^_^），程序会自动修改其ip地址！\n'
           '\t  若没有，则程序会在hosts文件末尾追加上相关代码！\n'
           '\t4.本程序会在你电脑没有hosts文件时，自动创建hosts文件，路径：C:\Windows\System32\drivers\etc\hosts\n'
-          '\t5.根据知乎博主：红尘 的文章教程制作的程序，文章地址：https://zhuanlan.zhihu.com/p/473437761\n'
-          '\t6.保守起见，还请先自行备份hosts文件！\n'
-          '\t7.项目开源地址：https://gitee.com/conan8023/edge-hosts\n'
-          '\t8.使用方法视频版演示教程以及问题反馈地址：\n'
-          '\t9.程序作者：哔哩哔哩UP主：阿哲-啊这\n')
+          '\t5.保守起见，还请先自行备份hosts文件！\n'
+          '\t6.项目开源地址：https://gitee.com/conan8023/edge-hosts\n'
+          '\t7.使用方法视频版演示教程以及问题反馈地址：\n'
+          '\t8.程序作者：哔哩哔哩UP主：阿哲-啊这\n')
     if not os.path.exists(hosts):
         os.system('type nul>C:\Windows\System32\drivers\etc\hosts')  # 调用系统命令来创建hosts文件
     main()
