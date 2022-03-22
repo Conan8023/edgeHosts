@@ -58,7 +58,8 @@ if __name__ == '__main__':
           '\t4.本程序会在你电脑没有hosts文件时，自动创建hosts文件，路径：C:\Windows\System32\drivers\etc\hosts\n'
           '\t5.保守起见，还请先自行备份hosts文件！\n'
           '\t6.项目开源地址：https://gitee.com/conan8023/edge-hosts\n'
-          '\t7.使用方法视频版演示教程以及问题反馈地址：\n'
+          '\t             https://github.com/Conan8023/edgeHosts\n'
+          '\t7.使用方法视频版演示教程以及问题反馈地址：https://www.bilibili.com/video/BV1qZ4y167f1\n'
           '\t8.程序作者：哔哩哔哩UP主：阿哲-啊这\n')
     if not os.path.exists(hosts):
         os.system('type nul>C:\Windows\System32\drivers\etc\hosts')  # 调用系统命令来创建hosts文件
